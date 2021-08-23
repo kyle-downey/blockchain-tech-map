@@ -1,0 +1,237 @@
+
+digraph {    
+    root [label="Decentralized Platforms"] 
+    blockchains [label="Blockchains"]
+    infra [label="Infrastructure"]
+    defi [label="DeFi"]
+
+    layer1 [label="L1"]
+    layer2 [label="L2"]
+
+    blockchain_1g [label="1st Generation"]
+    blockchain_2g [label="2nd Generation"]
+    blockchain_3g [label="3rd Generation"]
+    
+    consensus_pow [label="PoW"]
+    consensus_pos [label="PoS"]
+    consensus_other [label="Other"]
+    
+    bitcoin [label="Bitcoin", href="https://bitcoin.org/en/"]
+    litecoin [label="Litecoin", href="https://litecoin.org/"]
+    dogecoin [label="Dogecoin", href="https://dogecoin.com/"]
+
+    ripple [label="Ripple", href="https://xrpl.org/"]
+    stellar [label="Stellar", href="http://www.stellar.org"]
+
+    ethereum1 [label="Ethereum 1.x", href="https://ethereum.org/en/"]
+    erc_20 [label="ERC-20 Tokens", href="https://eips.ethereum.org/EIPS/eip-20"]
+    erc_721 [label="ERC-721 Collectibles (NFT's)", href="https://eips.ethereum.org/EIPS/eip-721"]
+
+    algorand [label="Algorand", href="https://www.algorand.com/"]
+    avalanche [label="Avalanche", href="https://www.avax.network/"]
+    binance [label="Binance Smart Chain", href="https://www.binance.org/en/smartChain"]
+    cardano [label="Cardano", href="https://cardano.org/"]
+    cosmos [label="Cosmos", href="https://cosmos.network/"]
+    elrond [label="Elrond", href="https://elrond.com/"]
+    ethereum2 [label="Ethereum 2.x", href="https://ethereum.org/en/eth2/"]
+    fantom [label="Fantom", href="http://fantom.foundation"]
+    polkadot [label="Polkadot", href="https://polkadot.network/"]
+    solana [label="Solana", href="https://solana.com/"]
+    terra [label="Terra", href="http://terra.money"]
+
+    ethereum_backed [label="Ethereum-backed"]
+    bitcoin_backed [label="Bitcoin-backed"]
+    lightning [label="Lightning", href="https://lightning.network/"]
+    plasma [label="Plasma", href="https://ethereum.org/en/developers/docs/scaling/plasma/"]
+    rollups [label="On-chain rollups", href="https://ethereum.org/en/developers/docs/scaling/layer-2-rollups/"]
+    sidechain [label="Sidechains"]
+    validium [label="Validium", href="https://ethereum.org/en/developers/docs/scaling/validium/"]
+    optimistic_rollups [label="Optimistic Rollups"]
+    other_rollups [label="Other"]
+    zk_rollups [label="ZK Rollups"]
+
+    arbitum [label="Arbitum", href="https://arbitrum.io/"]
+    boba [label="Boba", href="https://boba.network/"]
+    gluon [label="Gluon", href="https://gluon.network/"]
+    harmony [label="Harmony", href="http://harmony.one"]
+    leapdao [label="LeapDAO", href="https://ipfs.leapdao.org/"]
+    loopring [label="Loopring", href="https://loopring.org/#/"]
+    optimism [label="Optimism", href="https://optimism.io/"]
+    polygon [label="Polygon", href="https://polygon.technology/"]
+    raiden [label="Raiden", href="https://raiden.network/"]
+    starkex [label="StarkEx", href="https://starkware.co/product/starkex/"]
+    xdai [label="xDai", href="https://www.xdaichain.com/"]
+    zksync [label="zkSync", href="https://zksync.io/"]
+
+    analytics [label="Analytics"]
+    oracles [label="Oracles"]
+    storage [label="Storage"]
+
+    ipfs [label="IPFS"]
+    
+    chainlink [label="Chainlink", href="https://chain.link/"]
+
+    bitquery [label="Bitquery", href="https://bitquery.io/"]
+    dune [label="Dune Analytics", href="https://dune.xyz/home"]
+    the_graph [label="The Graph", href="https://thegraph.com/"]
+
+    stablecoins [label="Stablecoins"]
+    crypto_backed [label="Crypto-collateralized"]
+    fiat_backed [label="Fiat-collateralized"]
+    algostables [label="Algostables"]
+    lending [label="Lending"]
+    yield_aggregators [label="Yield Aggregators"]
+    dex [label="DEX"]
+    aggregators [label="Aggregators"]
+    swap [label="Swaps"]
+    margin_trading [label="Margin Trading"]
+    derivatives [label="Derivatives"]
+    insurance [label="Insurance"]
+    prediction [label="Prediction Markets"]
+    synthetics [label="Synthetics"]
+
+    binance_usd [label="Binance USD", href="https://www.binance.com/en/busd"]
+    tether [label="Tether", href="https://tether.to/"]
+    usdc [label="USD Coin", href="https://www.centre.io/usdc"]
+    dai [label="DAI", href="https://makerdao.com/en/"]
+    paxos [label="Paxos Standard", href="https://www.paxos.com/pax/"]
+    gemini [label="Gemini Dollar", href="https://www.gemini.com/dollar"]
+    ampleforth [label="Ampleforth", href="https://www.ampleforth.org/"]
+    frax [label="Frax", href="https://frax.finance/"]
+
+    aave [label="Aave", href="https://aave.com/"]
+    cream [label="Cream", href="https://app.cream.finance/"]
+    compound [label="Compound", href="https://compound.finance/"]
+    curve [label="Curve", href="https://curve.fi/"]
+    maker [label="Maker", href="https://makerdao.com/en/"]
+
+    harvest [label="Harvest", href="https://harvest.finance/"]
+    yearn [label="Yearn", href="https://yearn.finance/"]
+
+    balancer [label="Balancer", href="https://balancer.fi/"]
+    gravity [label="Gravity DEX", href="https://cosmos.network/gravity-dex/"]
+    loopring_exchange [label="Loopring Exchange", href="https://exchange.loopring.io/"]
+    honeyswap [label="Honeyswap", href="https://honeyswap.org/"]
+    pancakeswap [label="PancakeSwap", href="https://pancakeswap.finance/"]
+    pangolin [label="Pangolin", href="https://pangolin.exchange/"]
+    polkaswap [label="Polkaswap", href="https://polkaswap.io/"]
+    quickswap [label="QuickSwap", href="https://quickswap.exchange/"]
+    raydium [label="Raydium", href="https://raydium.io/"]
+    serum [label="Serum", href="https://projectserum.com/#/"]
+    sushiswap [label="SushiSwap", href="https://sushi.com/"]
+    uniswap [label="Uniswap", href="https://uniswap.org/"]
+
+    deversifi [label="Deversifi", href="https://www.deversifi.com/"]
+    mango [label="Mango Markets", href="https://mango.markets/"]
+
+    dydx [label="dYdX", href="https://trade.dydx.exchange/"]
+    hegic [label="Hegic", href="https://www.hegic.co/"]
+
+    kyber [label="Kyber Network", href="https://kyber.network/"]
+    matcha [label="Matcha", href="https://matcha.xyz/"]
+    oneinch [label="1inch", href="https://app.1inch.io/"]
+    paraswap [label="ParaSwap", href="https://paraswap.io/"]
+    zerox [label="0x", href="https://0x.org/"]
+
+    mirror [label="Mirror", href="https://mirror.finance/"]
+    synthetix [label="Synthetix", href="https://www.synthetix.io/"]
+
+    augur [label="Augur", href="https://www.augur.net/"]
+    gnosis [label="Gnosis", href="https://gnosis.io/"]
+
+    cover [label="Cover", href="https://www.coverprotocol.com/"]
+    nexus [label="Nexus Mutual", href="https://nexusmutual.io/"]
+    opium [label="Opium", href="https://opium.finance/"]
+    
+    root -> blockchains
+    
+    blockchains -> layer1
+    blockchains -> layer2
+
+    layer1 -> blockchain_1g -> consensus_pow
+    consensus_pow -> bitcoin
+    consensus_pow -> litecoin
+    consensus_pow -> dogecoin
+
+    blockchain_1g -> consensus_other
+    consensus_other -> ripple
+    consensus_other -> stellar
+
+    layer1 -> blockchain_2g -> ethereum1
+    consensus_pow -> ethereum1
+    ethereum1 -> erc_20
+    ethereum1 -> erc_721
+
+    layer1 -> blockchain_3g -> consensus_pos
+    consensus_pos -> algorand
+    consensus_pos -> avalanche
+    consensus_pos -> binance
+    consensus_pos -> cardano
+    consensus_pos -> cosmos
+    consensus_pos -> elrond
+    consensus_pos -> ethereum2
+    consensus_pos -> fantom
+    consensus_pos -> polkadot
+    consensus_pos -> solana
+    consensus_pos -> terra
+
+    layer2 -> ethereum_backed
+    layer2 -> bitcoin_backed -> lightning
+    ethereum_backed -> plasma
+    ethereum_backed -> rollups
+    ethereum_backed -> sidechain
+    ethereum_backed -> validium
+    plasma -> gluon
+    plasma -> polygon
+    plasma -> leapdao
+    rollups -> optimistic_rollups
+    rollups -> other_rollups
+    rollups -> zk_rollupsx
+    optimistic_rollups -> arbitum
+    optimistic_rollups -> boba
+    optimistic_rollups -> optimism
+    optimistic_rollups -> polygon [style="dotted"]
+    zk_rollups -> polygon [style="dotted"]
+    zk_rollups -> starkex
+    zk_rollups -> zksync
+    other_rollups -> gluon
+    other_rollups -> harmony
+    sidechain -> raiden
+    sidechain -> xdai
+    validium -> loopring
+    validium -> starkex
+
+    root -> defi
+    defi -> dex
+    defi -> stablecoins
+
+    stablecoins -> fiat_backed
+    stablecoins -> algostables
+
+    fiat_backed -> binance_usd
+    fiat_backed -> tether
+    fiat_backed -> usdc
+
+    dex -> derivatives
+    dex -> swap
+
+    swap -> pangolin
+    swap -> quickswap
+    swap -> sushiswap
+    swap -> uniswap
+
+    derivatives -> dydx
+    derivatives -> hegic
+
+    root -> infra
+    infra -> analytics
+    infra -> oracles
+    infra -> storage
+
+    analytics -> bitquery
+    analytics -> dune
+    analytics -> the_graph
+
+    oracles -> chainlink
+    storage -> ipfs
+}
