@@ -82,7 +82,7 @@ digraph {
     lending [label="Lending"]
     yield_aggregators [label="Yield Aggregators"]
     dex [label="DEX"]
-    aggregators [label="Aggregators"]
+    dex_aggregators [label="DEX Aggregators"]
     swap [label="Swaps"]
     margin_trading [label="Margin Trading"]
     derivatives [label="Derivatives"]
@@ -110,8 +110,8 @@ digraph {
 
     balancer [label="Balancer", href="https://balancer.fi/"]
     gravity [label="Gravity DEX", href="https://cosmos.network/gravity-dex/"]
-    loopring_exchange [label="Loopring Exchange", href="https://exchange.loopring.io/"]
     honeyswap [label="Honeyswap", href="https://honeyswap.org/"]
+    loopring_exchange [label="Loopring Exchange", href="https://exchange.loopring.io/"]
     pancakeswap [label="PancakeSwap", href="https://pancakeswap.finance/"]
     pangolin [label="Pangolin", href="https://pangolin.exchange/"]
     polkaswap [label="Polkaswap", href="https://polkaswap.io/"]
@@ -203,25 +203,74 @@ digraph {
 
     root -> defi
     defi -> dex
+    defi -> dex_aggregators
+    defi -> insurance
+    defi -> margin_trading
+    defi -> prediction
     defi -> stablecoins
+    defi -> synthetics
+    defi -> lending
+    defi -> yield_aggregators
 
     stablecoins -> fiat_backed
+    stablecoins -> crypto_backed
     stablecoins -> algostables
 
     fiat_backed -> binance_usd
+    fiat_backed -> gemini
+    fiat_backed -> paxos
     fiat_backed -> tether
     fiat_backed -> usdc
+
+    crypto_backed -> dai
+
+    algostables -> ampleforth
+    algostables -> frax
 
     dex -> derivatives
     dex -> swap
 
+    dex_aggregators -> kyber
+    dex_aggregators -> matcha
+    dex_aggregators -> oneinch
+    dex_aggregators -> paraswap
+    dex_aggregators -> zerox
+
+    swap -> honeyswap
+    swap -> loopring_exchange
     swap -> pangolin
+    swap -> pancakeswap
+    swap -> polkaswap
     swap -> quickswap
+    swap -> raydium
+    swap -> serum
     swap -> sushiswap
     swap -> uniswap
 
     derivatives -> dydx
     derivatives -> hegic
+
+    lending -> aave
+    lending -> cream
+    lending -> compound
+    lending -> curve
+    lending -> maker
+
+    prediction -> augur
+    prediction -> gnosis
+
+    margin_trading -> deversifi
+    margin_trading -> mango
+
+    insurance -> cover
+    insurance -> nexus
+    insurance -> opium
+
+    synthetics -> mirror
+    synthetics -> synthetix
+
+    yield_aggregators -> harvest
+    yield_aggregators -> yearn
 
     root -> infra
     infra -> analytics
