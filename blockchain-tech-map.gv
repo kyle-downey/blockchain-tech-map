@@ -66,7 +66,7 @@ digraph {
     analytics [label="Analytics"]
     oracles [label="Oracles"]
     storage [label="Storage"]
-    cloud [label="DeCloud"]
+    compute [label="Compute"]
 
     ipfs [label="IPFS", href="https://ipfs.io/"]
     akash [label="Akash", href="http://akash.network"]
@@ -86,6 +86,12 @@ digraph {
     dex [label="DEX"]
     dex_aggregators [label="DEX Aggregators"]
     swap [label="Swaps"]
+    swap_avax [label="Avalance-based"]
+    swap_bsc [label="Binance-based"]
+    swap_cosmos [label="Cosmos-based"]
+    swap_dot [label="Polkadot-based"]
+    swap_eth [label="Ethereum-based"]
+    swap_solana [label="Solana-based"]
     margin_trading [label="Margin Trading"]
     derivatives [label="Derivatives"]
     insurance [label="Insurance"]
@@ -238,18 +244,25 @@ digraph {
     dex_aggregators -> paraswap
     dex_aggregators -> zerox
 
-    swap -> balancer
-    swap -> gravity
-    swap -> honeyswap
-    swap -> loopring_exchange
-    swap -> pangolin
-    swap -> pancakeswap
-    swap -> polkaswap
-    swap -> quickswap
-    swap -> raydium
-    swap -> serum
-    swap -> sushiswap
-    swap -> uniswap
+    swap -> swap_avax
+    swap -> swap_bsc
+    swap -> swap_cosmos
+    swap -> swap_dot
+    swap -> swap_eth
+    swap -> swap_solana
+
+    swap_avax -> pangolin
+    swap_bsc -> pancakeswap
+    swap_cosmos -> gravity
+    swap_dot -> polkaswap
+    swap_eth -> balancer
+    swap_eth -> honeyswap
+    swap_eth -> loopring_exchange
+    swap_eth -> quickswap
+    swap_eth -> sushiswap
+    swap_eth -> uniswap
+    swap_solana -> raydium
+    swap_solana -> serum
 
     derivatives -> dydx
     derivatives -> hegic
@@ -278,10 +291,9 @@ digraph {
 
     root -> infra
     infra -> analytics
-    infra -> cloud
+    infra -> compute
     infra -> oracles
     infra -> storage
-
 
     analytics -> bitquery
     analytics -> dune
@@ -289,5 +301,5 @@ digraph {
 
     oracles -> chainlink
     storage -> ipfs
-    cloud -> akash
+    compute -> akash
 }
