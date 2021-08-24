@@ -236,6 +236,8 @@ digraph {
     dex_aggregators -> paraswap
     dex_aggregators -> zerox
 
+    swap -> balancer
+    swap -> gravity
     swap -> honeyswap
     swap -> loopring_exchange
     swap -> pangolin
