@@ -86,7 +86,7 @@ digraph {
     dex [label="DEX"]
     dex_aggregators [label="DEX Aggregators"]
     swap [label="Swaps"]
-    swap_avax [label="Avalance-based"]
+    swap_avax [label="Avalanche-based"]
     swap_bsc [label="Binance-based"]
     swap_cosmos [label="Cosmos-based"]
     swap_dot [label="Polkadot-based"]
