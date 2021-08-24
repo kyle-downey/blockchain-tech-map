@@ -66,9 +66,11 @@ digraph {
     analytics [label="Analytics"]
     oracles [label="Oracles"]
     storage [label="Storage"]
+    cloud [label="DeCloud"]
 
-    ipfs [label="IPFS"]
-    
+    ipfs [label="IPFS", href="https://ipfs.io/"]
+    akash [label="Akash", href="http://akash.network"]
+
     chainlink [label="Chainlink", href="https://chain.link/"]
 
     bitquery [label="Bitquery", href="https://bitquery.io/"]
@@ -186,7 +188,7 @@ digraph {
     plasma -> leapdao
     rollups -> optimistic_rollups
     rollups -> other_rollups
-    rollups -> zk_rollupsx
+    rollups -> zk_rollups
     optimistic_rollups -> arbitum
     optimistic_rollups -> boba
     optimistic_rollups -> optimism
@@ -276,8 +278,10 @@ digraph {
 
     root -> infra
     infra -> analytics
+    infra -> cloud
     infra -> oracles
     infra -> storage
+
 
     analytics -> bitquery
     analytics -> dune
@@ -285,4 +289,5 @@ digraph {
 
     oracles -> chainlink
     storage -> ipfs
+    cloud -> akash
 }
