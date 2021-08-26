@@ -2,6 +2,7 @@
 digraph {    
     root [label="Decentralized Platforms"] 
     blockchains [label="Blockchains"]
+    dags [label="DAGs"]
     infra [label="Infrastructure"]
     defi [label="DeFi"]
 
@@ -62,6 +63,9 @@ digraph {
     starkex [label="StarkEx", href="https://starkware.co/product/starkex/"]
     xdai [label="xDai", href="https://www.xdaichain.com/"]
     zksync [label="zkSync", href="https://zksync.io/"]
+
+    iota [label="IOTA", href="https://www.iota.org/"]
+    hedera [label="Hedera Hashgraph", href="https://hedera.com/"]
 
     analytics [label="Analytics"]
     oracles [label="Oracles"]
@@ -151,7 +155,7 @@ digraph {
     cover [label="Cover", href="https://www.coverprotocol.com/"]
     nexus [label="Nexus Mutual", href="https://nexusmutual.io/"]
     opium [label="Opium", href="https://opium.finance/"]
-    
+
     root -> blockchains
     
     blockchains -> layer1
@@ -209,6 +213,10 @@ digraph {
     sidechain -> xdai
     validium -> loopring
     validium -> starkex
+
+    root -> dags
+    dags -> iota
+    dags -> hedera
 
     root -> defi
     defi -> dex
