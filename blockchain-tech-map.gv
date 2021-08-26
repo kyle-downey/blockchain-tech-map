@@ -71,6 +71,7 @@ digraph {
     ipfs [label="IPFS", href="https://ipfs.io/"]
     akash [label="Akash", href="http://akash.network"]
 
+    api3 [label="API3", href="https://api3.org/"]
     chainlink [label="Chainlink", href="https://chain.link/"]
 
     bitquery [label="Bitquery", href="https://bitquery.io/"]
@@ -299,6 +300,7 @@ digraph {
     analytics -> dune
     analytics -> the_graph
 
+    oracles -> api3
     oracles -> chainlink
     storage -> ipfs
     compute -> akash
