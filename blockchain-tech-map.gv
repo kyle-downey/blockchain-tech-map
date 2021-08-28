@@ -81,6 +81,7 @@ digraph {
     bitquery [label="Bitquery", href="https://bitquery.io/"]
     dune [label="Dune Analytics", href="https://dune.xyz/home"]
     the_graph [label="The Graph", href="https://thegraph.com/"]
+    glassnode [label="Glassnode", href="http://www.glassnode.com"]
 
     stablecoins [label="Stablecoins"]
     crypto_backed [label="Crypto-collateralized"]
@@ -307,6 +308,7 @@ digraph {
     analytics -> bitquery
     analytics -> dune
     analytics -> the_graph
+    analytics -> glassnode
 
     oracles -> api3
     oracles -> chainlink
