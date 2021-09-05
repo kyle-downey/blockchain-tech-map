@@ -36,6 +36,7 @@ digraph {
     elrond [label="Elrond", href="https://elrond.com/"]
     ethereum2 [label="Ethereum 2.x", href="https://ethereum.org/en/eth2/"]
     fantom [label="Fantom", href="http://fantom.foundation"]
+    near [label="NEAR", href="http://near.org"]
     polkadot [label="Polkadot", href="https://polkadot.network/"]
     solana [label="Solana", href="https://solana.com/"]
     terra [label="Terra", href="http://terra.money"]
@@ -68,20 +69,26 @@ digraph {
     hedera [label="Hedera Hashgraph", href="https://hedera.com/"]
 
     analytics [label="Analytics"]
+    automation [label="Automation"]
     oracles [label="Oracles"]
     storage [label="Storage"]
     compute [label="Compute"]
 
-    ipfs [label="IPFS", href="https://ipfs.io/"]
     akash [label="Akash", href="http://akash.network"]
+
+    ipfs [label="IPFS", href="https://ipfs.io/"]
+    sia [label="Sia", href="https://sia.tech/"]
 
     api3 [label="API3", href="https://api3.org/"]
     chainlink [label="Chainlink", href="https://chain.link/"]
+    tellor [label="Tellor", href="https://www.tellor.io/"]
 
     bitquery [label="Bitquery", href="https://bitquery.io/"]
     dune [label="Dune Analytics", href="https://dune.xyz/home"]
     the_graph [label="The Graph", href="https://thegraph.com/"]
     glassnode [label="Glassnode", href="http://www.glassnode.com"]
+
+    gelato [label="Gelato", href="https://www.gelato.network/"]
 
     stablecoins [label="Stablecoins"]
     crypto_backed [label="Crypto-collateralized"]
@@ -185,6 +192,7 @@ digraph {
     consensus_pos -> elrond
     consensus_pos -> ethereum2
     consensus_pos -> fantom
+    consensus_pos -> near
     consensus_pos -> polkadot
     consensus_pos -> solana
     consensus_pos -> terra
@@ -301,6 +309,7 @@ digraph {
 
     root -> infra
     infra -> analytics
+    infra -> automation
     infra -> compute
     infra -> oracles
     infra -> storage
@@ -310,8 +319,14 @@ digraph {
     analytics -> the_graph
     analytics -> glassnode
 
+    automation -> gelato
+
     oracles -> api3
     oracles -> chainlink
+    oracles -> tellor
+
     storage -> ipfs
+    storage -> sia
+
     compute -> akash
 }
