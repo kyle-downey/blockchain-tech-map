@@ -147,6 +147,7 @@ digraph {
 
     dydx [label="dYdX", href="https://trade.dydx.exchange/"]
     hegic [label="Hegic", href="https://www.hegic.co/"]
+    injective [label="Injective", href="https://injectiveprotocol.com/"]
 
     kyber [label="Kyber Network", href="https://kyber.network/"]
     matcha [label="Matcha", href="https://matcha.xyz/"]
@@ -284,6 +285,7 @@ digraph {
 
     derivatives -> dydx
     derivatives -> hegic
+    derivatives -> injective
 
     lending -> aave
     lending -> cream
