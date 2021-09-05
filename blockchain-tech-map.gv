@@ -82,6 +82,7 @@ digraph {
     api3 [label="API3", href="https://api3.org/"]
     chainlink [label="Chainlink", href="https://chain.link/"]
     tellor [label="Tellor", href="https://www.tellor.io/"]
+    pyth [label="Pyth", href="https://pyth.network/"]
 
     bitquery [label="Bitquery", href="https://bitquery.io/"]
     dune [label="Dune Analytics", href="https://dune.xyz/home"]
@@ -325,6 +326,7 @@ digraph {
 
     oracles -> api3
     oracles -> chainlink
+    oracles -> pyth
     oracles -> tellor
 
     storage -> ipfs
