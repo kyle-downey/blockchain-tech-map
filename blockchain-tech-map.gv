@@ -75,7 +75,7 @@ digraph {
     compute [label="Compute"]
 
     akash [label="Akash", href="http://akash.network"]
-    cartesi [label="Cartesi", "https://cartesi.io/en/"]
+    cartesi [label="Cartesi", href="https://cartesi.io/en/"]
 
     ceramic [label="Ceramic", href="https://ceramic.network/"]
     ipfs [label="IPFS", href="https://ipfs.io/"]
