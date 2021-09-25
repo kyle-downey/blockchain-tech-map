@@ -29,7 +29,6 @@ digraph {
     erc_721 [label="ERC-721 Collectibles (NFT's)", href="https://eips.ethereum.org/EIPS/eip-721"]
 
     algorand [label="Algorand", href="https://www.algorand.com/"]
-    avalanche [label="Avalanche", href="https://www.avax.network/"]
     binance [label="Binance Smart Chain", href="https://www.binance.org/en/smartChain"]
     cardano [label="Cardano", href="https://cardano.org/"]
     cosmos [label="Cosmos", href="https://cosmos.network/"]
@@ -64,6 +63,7 @@ digraph {
     xdai [label="xDai", href="https://www.xdaichain.com/"]
     zksync [label="zkSync", href="https://zksync.io/"]
 
+    avalanche [label="Avalanche", href="https://www.avax.network/"]
     iota [label="IOTA", href="https://www.iota.org/"]
     hedera [label="Hedera Hashgraph", href="https://hedera.com/"]
 
@@ -74,6 +74,7 @@ digraph {
 
     ipfs [label="IPFS", href="https://ipfs.io/"]
     akash [label="Akash", href="http://akash.network"]
+    cartesi [label="Cartesi", "https://cartesi.io/en/"]
 
     api3 [label="API3", href="https://api3.org/"]
     chainlink [label="Chainlink", href="https://chain.link/"]
@@ -87,8 +88,7 @@ digraph {
     crypto_backed [label="Crypto-collateralized"]
     fiat_backed [label="Fiat-collateralized"]
     algostables [label="Algostables"]
-    lending [label="Lending"]
-    yield_aggregators [label="Yield Aggregators"]
+    algo_execution [label="Algo Execution"]
     dex [label="DEX"]
     dex_aggregators [label="DEX Aggregators"]
     swap [label="Swaps"]
@@ -101,8 +101,10 @@ digraph {
     margin_trading [label="Margin Trading"]
     derivatives [label="Derivatives"]
     insurance [label="Insurance"]
+    lending [label="Lending"]
     prediction [label="Prediction Markets"]
     synthetics [label="Synthetics"]
+    yield_aggregators [label="Yield Aggregators"]
 
     binance_usd [label="Binance USD", href="https://www.binance.com/en/busd"]
     tether [label="Tether", href="https://tether.to/"]
@@ -113,7 +115,11 @@ digraph {
     ampleforth [label="Ampleforth", href="https://www.ampleforth.org/"]
     frax [label="Frax", href="https://frax.finance/"]
 
+    velox [label="Velox", href="https://velox.global/"]
+
     aave [label="Aave", href="https://aave.com/"]
+    blockfi [label="BlockFi", href="https://blockfi.com/"]
+    celsius [label="Celsius", href="http://celsius.network"]
     cream [label="Cream", href="https://app.cream.finance/"]
     compound [label="Compound", href="https://compound.finance/"]
     curve [label="Curve", href="https://curve.fi/"]
@@ -126,6 +132,7 @@ digraph {
     gravity [label="Gravity DEX", href="https://cosmos.network/gravity-dex/"]
     honeyswap [label="Honeyswap", href="https://honeyswap.org/"]
     loopring_exchange [label="Loopring Exchange", href="https://exchange.loopring.io/"]
+    orca [label="Orca", href="http://orca.so"]
     pancakeswap [label="PancakeSwap", href="https://pancakeswap.finance/"]
     pangolin [label="Pangolin", href="https://pangolin.exchange/"]
     polkaswap [label="Polkaswap", href="https://polkaswap.io/"]
@@ -137,6 +144,7 @@ digraph {
 
     deversifi [label="Deversifi", href="https://www.deversifi.com/"]
     mango [label="Mango Markets", href="https://mango.markets/"]
+    tracer [label="Tracer", href="https://tracer.finance/"]
 
     dydx [label="dYdX", href="https://trade.dydx.exchange/"]
     hegic [label="Hegic", href="https://www.hegic.co/"]
@@ -144,6 +152,7 @@ digraph {
     kyber [label="Kyber Network", href="https://kyber.network/"]
     matcha [label="Matcha", href="https://matcha.xyz/"]
     oneinch [label="1inch", href="https://app.1inch.io/"]
+    orion [label="Orion", href="https://www.orionprotocol.io/"]
     paraswap [label="ParaSwap", href="https://paraswap.io/"]
     zerox [label="0x", href="https://0x.org/"]
 
@@ -178,7 +187,6 @@ digraph {
 
     layer1 -> blockchain_3g -> consensus_pos
     consensus_pos -> algorand
-    consensus_pos -> avalanche
     consensus_pos -> binance
     consensus_pos -> cardano
     consensus_pos -> cosmos
@@ -216,10 +224,12 @@ digraph {
     validium -> starkex
 
     root -> dags
+    dags -> avalanche
     dags -> iota
     dags -> hedera
 
     root -> defi
+    def -> algo_execution
     defi -> dex
     defi -> dex_aggregators
     defi -> insurance
@@ -242,6 +252,8 @@ digraph {
 
     crypto_backed -> dai
 
+    algo_execution -> velox 
+
     algostables -> ampleforth
     algostables -> frax
 
@@ -251,6 +263,7 @@ digraph {
     dex_aggregators -> kyber
     dex_aggregators -> matcha
     dex_aggregators -> oneinch
+    dex_aggregators -> orion
     dex_aggregators -> paraswap
     dex_aggregators -> zerox
 
@@ -271,6 +284,7 @@ digraph {
     swap_eth -> quickswap
     swap_eth -> sushiswap
     swap_eth -> uniswap
+    swap_solana -> oraca
     swap_solana -> raydium
     swap_solana -> serum
 
@@ -278,6 +292,8 @@ digraph {
     derivatives -> hegic
 
     lending -> aave
+    lending -> blockfi
+    lending -> celsius
     lending -> cream
     lending -> compound
     lending -> curve
@@ -288,6 +304,7 @@ digraph {
 
     margin_trading -> deversifi
     margin_trading -> mango
+    margin_trading -> tracer
 
     insurance -> cover
     insurance -> nexus
@@ -314,4 +331,5 @@ digraph {
     oracles -> chainlink
     storage -> ipfs
     compute -> akash
+    compute -> cartesi
 }
