@@ -241,7 +241,7 @@ digraph {
     dags -> hedera
 
     root -> defi
-    def -> algo_execution
+    defi -> algo_execution
     defi -> dex
     defi -> dex_aggregators
     defi -> insurance
