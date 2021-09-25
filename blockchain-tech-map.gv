@@ -297,7 +297,7 @@ digraph {
     swap_eth -> quickswap
     swap_eth -> sushiswap
     swap_eth -> uniswap
-    swap_solana -> oraca
+    swap_solana -> orca
     swap_solana -> raydium
     swap_solana -> serum
 
